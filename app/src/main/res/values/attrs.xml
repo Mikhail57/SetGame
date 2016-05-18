@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CardView">
+        <attr name="cardCount" format="integer"/>
+        <attr name="cardType" format="enum">
+            <enum name="diamond" value="0"/>
+            <enum name="squiggle" value="1"/>
+            <enum name="oval" value="2"/>
+        </attr>
+        <attr name="cardColor" format="enum">
+            <enum name="blue" value="0"/>
+            <enum name="green" value="1"/>
+            <enum name="red" value="2"/>
+        </attr>
+        <attr name="shadingType" format="enum">
+            <enum name="solid" value="0"/>
+            <enum name="striped" value="1"/>
+            <enum name="open" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

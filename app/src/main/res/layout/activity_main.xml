@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.mustakimov.setgame.MainActivity">
+
+    <ru.mustakimov.setgame.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:cardCount="1"
+        custom:cardType="diamond"
+        custom:shadingType="open"
+        android:id="@+id/view"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ru.mustakimov.setgame.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:cardCount="1"
+        custom:cardType="oval"
+        custom:shadingType="striped"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view3" />
+
+    <ru.mustakimov.setgame.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:cardCount="2"
+        custom:cardType="squiggle"
+        custom:shadingType="solid"
+        android:id="@+id/view4"
+        android:layout_alignBottom="@+id/view3"
+        android:layout_alignLeft="@+id/view"
+        android:layout_alignStart="@+id/view" />
+
+    <ru.mustakimov.setgame.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:cardCount="3"
+        custom:cardType="squiggle"
+        custom:shadingType="solid"
+        android:id="@+id/view2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
